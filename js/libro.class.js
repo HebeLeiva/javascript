@@ -1,4 +1,5 @@
 class Libro {
+    
     constructor (titulo, autor, isbn, precio) {
         this.titulo = titulo
         this.autor = autor

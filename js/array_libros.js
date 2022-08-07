@@ -21,6 +21,7 @@ function precargoLibros() {
     libros.push(new Libro("La biblioteca de los libros rechazados", "David Foenkinos", "978-987-738-334-8", 4000))
 }
 
+
 function recorrerLibros() {
 
     for (let libro of libros){
@@ -31,7 +32,7 @@ function recorrerLibros() {
 function precioConIVA() {
     
     let indice = parseInt(prompt("Ingrese el número de índice del libro que desea consultar el precio con IVA:"))
-    if (parseInt === NaN){
+    if (isNaN(indice)){
         console.error("El índice ingresado no es un número.")
     } else if (indice > (libros.length)){
         console.error("El índice ingresado es inexistente.")

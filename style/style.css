@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.fondo {
+    background-color: rgba(253, 113, 32, 0.993);
+}
+
+main{
+    height: 100vh;
+    background-image: url("../img/fondo.jpg");
+    
+}
+
+h1{
+    font-size: xx-large;
+    color: lavenderblush;
+}
+
+p{
+    font-size: larger;
+    color:lavenderblush;
+}

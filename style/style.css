@@ -13,12 +13,36 @@ main{
     
 }
 
-h1{
-    font-size: xx-large;
-    color: lavenderblush;
+.titulo{
+    text-align: center
+    ;
 }
 
-p{
-    font-size: larger;
-    color:lavenderblush;
+.encabezado{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    width: 750px;
+
 }
+
+td{
+    padding: 20px 10px;
+}
+  
+
+.muestraCarrito {
+    
+    padding-top: 20px;
+    border-radius: 15px;
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    font-size: xx-large;
+    color: black;
+
+}
+
+
+
+

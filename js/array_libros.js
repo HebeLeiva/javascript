@@ -35,6 +35,29 @@ precargoLibros()
 
 cargarCarrito()
 
+mostrarCarrito()
+
+function mostrarCarrito() {
+    
+    const productosCarrito = document.getElementById("productosCarrito")
+    carrito.forEach(libro => {
+        productosCarrito.innerHTML += `<tr>
+                                            <td>${libro.titulo}</td>
+                                            <td>${libro.autor}</td>
+                                            <td>$ ${libro.precioConIVA()}</td>
+                                        <tr>`
+    })
+}
+
+totalCarrito()
+
+function totalCarrito() {
+    
+    total.innerHTML = `<p>TOTAL: $ ${finalizarCompra()}</p>`
+
+}
+
+
 function recorrerLibros() {
 
     libros.forEach(elemento => {
@@ -73,25 +96,15 @@ function promocionDescuento(){
 
 }
 
-
-function consultarPrecioConIVA() {
-    
-    let indice = parseInt(prompt("Ingrese el número de índice del libro que desea consultar el precio con IVA:"))
-
-    if (isNaN(indice)){
-        console.error("El índice ingresado no es un número.")
-    } 
-    else if (indice > (libros.length)){
-        console.error("El índice ingresado es inexistente.")
-    } 
-    else {
-        confirm("El precio con IVA del libro selecionado es de $ " + libros[indice].precioConIVA())
-    }
+function precioConIVA() {
+    return parseFloat((this.precio * IVA).toFixed(2))
 }
+
+
 
 function finalizarCompra() {
 
     let totalCompra = carrito.reduce((acc,libro) => acc + (libro.precio * IVA), 0)
-        console.log("El total a pagar con IVA incluído es de $ ", totalCompra.toFixed(2))
+        return totalCompra.toFixed(2)
     
 }

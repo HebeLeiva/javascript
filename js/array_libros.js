@@ -20,6 +20,14 @@ function precargoLibros() {
     libros.push(new Libro("Las intermitencias de la muerte", "José Saramago", "987-04-0234-8", 3399))
     libros.push(new Libro("La biblioteca de los libros rechazados", "David Foenkinos", "978-987-738-334-8", 3949))
     libros.push(new Libro("Las legiones malditas", "Santiago Posteguillo", "978-846-66-2674-3", 6400))
+    libros.push(new Libro("El señor de los anillos - La comunidad de anillo", "J.R.R. Tolkien", "978-84-450-7178-6", 3610))
+    libros.push(new Libro("Cementerio de animales", "Stephen King", "978-950-07-3165-2", 3285))
+    libros.push(new Libro("Crónica de Dalkey", "Flann O'Brien", "978-84-935578-1-2", 2250))
+    libros.push(new Libro("Roma invicta", "Javier Negrete", "978-950-02-0816-1", 7743))
+    libros.push(new Libro("La saga de los Romanov", "Jean des Cars", "978-950-02-0853-6", 3960))
+    libros.push(new Libro("Yo, Claudio", "Robert Graves", "84-487-0612-9", 3845))
+    libros.push(new Libro("El juego del ángel", "Carlos Ruíz Zafón", "978-950-49-1899-8", 6860))
+    libros.push(new Libro("Juego de tronos - Canción de hielo y fuego I", "George R.R. Martin", "978-950-644-227-9", 6614))
     libros.push(new Libro("El tiempo entre costuras", "María Dueñas", "978-987-58-0594-1", 2670))
 }
 
@@ -35,7 +43,14 @@ precargoLibros()
 
 cargarCarrito()
 
-mostrarCarrito()
+
+
+const botonVerCarrito = document.querySelector("#verCarrito")
+botonVerCarrito.addEventListener("click", mostrarCarrito)
+
+
+
+
 
 function mostrarCarrito() {
     
@@ -66,35 +81,37 @@ function recorrerLibros() {
 
 }
 
+
+
 function buscarPorAutor() {
     
-    let aut = prompt("Ingrese el nombre o apellido del autor:")
-    const resultado =libros.filter(elemento => elemento.autor.includes(aut))
-    console.table(resultado)
+     let aut = prompt("Ingrese el nombre o apellido del autor:")
+     const resultado =libros.filter(elemento => elemento.autor.includes(aut))
+     console.table(resultado)
 
 }
 
-function buscarPorLibro() {
+ function buscarPorLibro() {
     
-    let book = prompt("Ingrese el libro a buscar:")
-    const resultado =libros.filter(elemento => elemento.titulo.includes(book))
-    console.table(resultado)
+     let book = prompt("Ingrese el libro a buscar:")
+     const resultado =libros.filter(elemento => elemento.titulo.includes(book))
+     console.table(resultado)
 
 }
 
-function promocionDescuento(){
+// function promocionDescuento(){
   
-    let desc = ((parseInt(prompt("Ingrese el porcentaje de descuento para la promoción:"))) / 100) 
-    let resultado = libros.map(libro => {
-        return {
-            titulo: libro.titulo,
-            autor: libro.autor,
-            precio: (libro.precio * IVA) - (libro.precio * IVA  * desc)
-        }
-    })
-    console.table(resultado)
+//     let desc = ((parseInt(prompt("Ingrese el porcentaje de descuento para la promoción:"))) / 100) 
+//     let resultado = libros.map(libro => {
+//         return {
+//             titulo: libro.titulo,
+//             autor: libro.autor,
+//             precio: (libro.precio * IVA) - (libro.precio * IVA  * desc)
+//         }
+//     })
+//     console.table(resultado)
 
-}
+// }
 
 function precioConIVA() {
     return parseFloat((this.precio * IVA).toFixed(2))

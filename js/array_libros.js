@@ -20,6 +20,7 @@ function precargoLibros() {
     libros.push(new Libro(18, 'img/primitiva.jpeg',"La horda primitiva", "Julia Coria", "978-987-670-692-6", 2660))
 }
 
+// USO OPERADOR LOGICO OR:
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
@@ -62,6 +63,14 @@ function agregarAlCarrito(libro) {
         libroFind.cantidad++
         }
         renderizarCarrito()
+    
+}
+
+function vaciarCarrito() {
+    const vaciarCarrito = document.querySelector("#vaciarCarrito")
+    vaciarCarrito.addEventListener("click", () => {
+    carrito.length = 0})
+
 }
 
 
@@ -80,6 +89,10 @@ function renderizarCarrito() {
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
     borrarLibro()
+    const precioTotal = document.querySelector(".precioTotal")
+    totalCarrito.innerText = carrito.reduce((acc, libro) => acc + libro.cantidad * libro.precio, 0)
+   
+
 }
 
 
@@ -91,6 +104,10 @@ function borrarLibro() {
         })
     })
 }
+
+
+   
+
 
 
 precargoLibros()

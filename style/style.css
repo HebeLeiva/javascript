@@ -57,3 +57,8 @@ h4 {
     font-weight: bolder;
     text-align: center;
 }
+
+.precioTotal {
+    font-size: 35px;
+    font-weight: bolder;
+}

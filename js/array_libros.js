@@ -20,7 +20,7 @@ function precargoLibros() {
     libros.push(new Libro(18, 'img/primitiva.jpeg',"La horda primitiva", "Julia Coria", "978-987-670-692-6", 2660))
 }
 
-// USO OPERADOR LOGICO OR:
+
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
 
@@ -47,7 +47,9 @@ function botonAgregar() {
     libros.forEach((libro) => {
         document.querySelector(`#btnAgregar${libro.id}`).addEventListener("click", () => {
             agregarAlCarrito(libro)
+            sa("Se agregó el libro a tu carrito", '#855eC0')   
         })
+        
     })
 }
 
@@ -101,12 +103,24 @@ function borrarLibro() {
         document.querySelector(`#btnQuitar${libro.id}`).addEventListener("click", () => {
             carrito = carrito.filter((libroFilter) => libroFilter.id !== libro.id)
             renderizarCarrito()
+            sa("Se quitó el libro de tu carrito", '#254e99') 
         })
+        
     })
 }
 
-
+const sa = (mensaje, fondo)=>{
+    Swal.fire({
+        text: mensaje,
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 2500,
+        background: fondo,
+        color: 'white'
+    })
+}
    
+
 
 
 

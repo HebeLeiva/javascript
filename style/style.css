@@ -46,6 +46,7 @@ h4 {
 #btnAgregar {
     display: flex;
     align-self: flex-end;
+    
 }
 
 .mostrarCarrito {

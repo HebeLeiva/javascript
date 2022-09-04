@@ -10,27 +10,51 @@
 main {
     width: 100vw;
     background-image: url("../img/otrofondo.png");
-    background-repeat: repeat-y repeat-x
+    background-repeat: repeat-y repeat-x;
+    padding-left: 10px;
+    padding-right: 10px;
        
 }
 
+nav {
+    width: 100vw;
+}
+
+
+
 .fondoCatalogo {
-    background-color: rgba(205, 247, 233, 0.363);
+    background-color: rgba(210, 184, 245, 0.473);
     
 }
 
+.botonCarrito {
+    font-size: 50px;
+    font-weight: bolder;
+    color:rgba(24, 24, 116, 0.897)
+    
+}
 .tapaLibro {
     height: 300px;
+    
 
 
+}
+
+.error-catalogo {
+    font-size: 40px;
+    font-weight: bold;
+    align-self: center;
 }
 
 h2 {
-    height: 80px;
+    height: 90px;
+    color:rgba(19, 19, 100, 0.897);
+    font-weight: bold;
+   
 }
 
 h3 {
-    color: rgba(73, 71, 71, 0.884);
+    color: rgba(53, 51, 51, 0.884);
 }
 
 h4 {

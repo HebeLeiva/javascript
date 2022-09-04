@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,   
+        "imagen": "img/breve.jpg", 
+        "titulo": "Breve historia del tiempo",
+        "autor": "Stephen W. Hawking",
+        "isbn": "84-253-2758-X",
+        "precio":  2000      
+    },
+    {
+        "id": 2,
+        "imagen": "img/elegante.jpeg",    
+        "titulo": "El universo elegante",
+        "autor": "Brian Greene",
+        "isbn": "84-8432-264-5",
+        "precio":  4800       
+    },
+    {
+        "id": 3,
+        "imagen": "img/septimo.jpeg",    
+        "titulo": "El séptimo círculo del infierno",
+        "autor": "Santiago Posteguillo",
+        "isbn": "978-950-49-6009-6",
+        "precio": 4690       
+    },
+    {
+        "id": 4,
+        "imagen": "img/paris.jpeg",    
+        "titulo": "El enigma de París",
+        "autor": "Pablo De Santis",
+        "isbn": "978-958-42-1686-1",
+        "precio": 1730      
+    },
+    {
+        "id": 5,
+        "imagen": "img/intermitencias.jpeg",    
+        "titulo": "Las intermitencias de la muerte",
+        "autor": "José Saramago",
+        "isbn": "987-04-0234-8",
+        "precio": 3399      
+    },
+    {
+        "id": 6,
+        "imagen": "img/rechazados.jpeg",    
+        "titulo": "La biblioteca de los libros rechazados",
+        "autor": "David Foenkinos",
+        "isbn": "978-987-738-334-8",
+        "precio": 3949        
+    },
+    {
+        "id": 7,
+        "imagen": "img/legiones.jpeg",    
+        "titulo": "Las legiones malditas",
+        "autor": "Santiago Posteguillo",
+        "isbn": "978-846-66-2674-3",
+        "precio": 6400       
+    },
+    {
+        "id": 8,
+        "imagen": "img/anillos.jpeg",    
+        "titulo": "El señor de los anillos - La comunidad de anillo",
+        "autor": "J.R.R. Tolkien",
+        "isbn": "978-84-450-7178-6",
+        "precio": 3610        
+    },
+    {
+        "id": 9,
+        "imagen": "img/animales.jpeg",    
+        "titulo": "Cementerio de animales",
+        "autor": "Stephen King",
+        "isbn": "978-950-07-3165-2",
+        "precio": 3285        
+    },
+    {
+        "id": 10,
+        "imagen": "img/dalkey.jpeg",    
+        "titulo": "Crónica de Dalkey",
+        "autor": "Flann O'Brien",
+        "isbn": "978-84-935578-1-2",
+        "precio":  2250       
+    },
+    {
+        "id": 11,
+        "imagen": "img/invicta.jpeg",    
+        "titulo": "Roma invicta",
+        "autor": "Javier Negrete",
+        "isbn": "978-950-02-0816-1",
+        "precio":  7743       
+    },
+    {
+        "id": 12,
+        "imagen": "img/romanov.jpeg",    
+        "titulo": "La saga de los Romanov",
+        "autor": "Jean des Cars",
+        "isbn": "978-950-02-0853-6",
+        "precio": 3960        
+    },
+    {
+        "id": 13,
+        "imagen": "img/claudio.jpeg",    
+        "titulo": "Yo, Claudio",
+        "autor": "Robert Graves",
+        "isbn": "84-487-0612-9",
+        "precio":  3845       
+    },
+    {
+        "id": 14,
+        "imagen": "img/juego.jpeg",    
+        "titulo": "El juego del ángel",
+        "autor": "Carlos Ruíz Zafón",
+        "isbn": "978-950-49-1899-8",
+        "precio": 6860       
+    },
+    {
+        "id": 15,
+        "imagen": "img/tronos.jpeg",    
+        "titulo": "Juego de tronos - Canción de hielo y fuego I",
+        "autor": "George R.R. Martin",
+        "isbn": "978-950-644-227-9",
+        "precio": 6614       
+    },
+    {
+        "id": 16,
+        "imagen": "img/costuras.jpeg",   
+        "titulo": "El tiempo entre costuras",
+        "autor": "María Dueñas",
+        "isbn": "978-987-58-0594-1",
+        "precio": 2670        
+    },
+    {
+        "id": 17,
+        "imagen": "img/jueves.jpeg",    
+        "titulo": "El club del crimen de los jueves",
+        "autor": "Richard Osman",
+        "isbn": "978-950-852-327-3",
+        "precio": 3020       
+    },
+    {
+        "id": 18,
+        "imagen": "img/primitiva.jpeg",   
+        "titulo": "La horda primitiva",
+        "autor": "Julia Coria",
+        "isbn": "978-987-670-692-6",
+        "precio": 2660        
+    }
+
+]

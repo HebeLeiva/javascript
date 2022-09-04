@@ -91,11 +91,13 @@ function renderizarCarrito() {
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
     borrarLibro()
-    const precioTotal = document.querySelector(".precioTotal")
+    //const precioTotal = document.querySelector(".precioTotal")
     totalCarrito.innerText = carrito.reduce((acc, libro) => acc + libro.cantidad * libro.precio, 0)
-   
+    //const numeroCarrito = document.querySelector("#numeroCarrito")
+    numeroCarrito.innerText = carrito.length
 
 }
+
 
 
 function borrarLibro() {
@@ -114,7 +116,7 @@ const sa = (mensaje, fondo)=>{
         text: mensaje,
         icon: 'success',
         showConfirmButton: false,
-        timer: 2500,
+        timer: 1500,
         background: fondo,
         color: 'white'
     })

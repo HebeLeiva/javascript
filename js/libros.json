@@ -58,7 +58,7 @@
     {
         "id": 8,
         "imagen": "img/anillos.jpeg",    
-        "titulo": "El señor de los anillos - La comunidad de anillo",
+        "titulo": "El señor de los anillos",
         "autor": "J.R.R. Tolkien",
         "isbn": "978-84-450-7178-6",
         "precio": 3610        
@@ -114,7 +114,7 @@
     {
         "id": 15,
         "imagen": "img/tronos.jpeg",    
-        "titulo": "Juego de tronos - Canción de hielo y fuego I",
+        "titulo": "Juego de tronos - Canción de hielo y fuego",
         "autor": "George R.R. Martin",
         "isbn": "978-950-644-227-9",
         "precio": 6614       

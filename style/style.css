@@ -2,9 +2,13 @@
     padding: 0;
     margin: 0;
 }
+html {
+    width: 100%;
+    height: 100vh;
+}
 
 .fondo {
-    background-color: rgba(248, 227, 246, 0.993);
+    background-color: rgba(207, 137, 221, 0.993);
 }
 
 main {
@@ -13,31 +17,31 @@ main {
     background-repeat: repeat-y repeat-x;
     padding-left: 10px;
     padding-right: 10px;
-       
 }
 
 nav {
     width: 100vw;
 }
 
-
-
 .fondoCatalogo {
     background-color: rgba(210, 184, 245, 0.473);
-    
 }
 
 .botonCarrito {
     font-size: 50px;
     font-weight: bolder;
     color:rgba(24, 24, 116, 0.897)
-    
 }
+
 .tapaLibro {
-    height: 300px;
-    
+    height: 200px;
+    box-shadow: 5px 5px 5px black;
+    transition-property: all;
+    transition-duration: 1s;
+}
 
-
+.tapaLibro:hover{
+    transform: scale(1.5);
 }
 
 .error-catalogo {
@@ -47,14 +51,17 @@ nav {
 }
 
 h2 {
-    height: 90px;
+    height: 60px;
     color:rgba(19, 19, 100, 0.897);
     font-weight: bold;
-   
+    font-size: 25px;
+    padding-top: 10px;
 }
 
 h3 {
     color: rgba(53, 51, 51, 0.884);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 h4 {
@@ -62,7 +69,7 @@ h4 {
 }
 
 .precio {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     text-align: left;
 }
@@ -70,7 +77,6 @@ h4 {
 #btnAgregar {
     display: flex;
     align-self: flex-end;
-    
 }
 
 .mostrarCarrito {
@@ -80,10 +86,54 @@ h4 {
 
 .tituloCarrito {
     font-weight: bolder;
+    font-size: x-large;
     text-align: center;
+    color:rgba(19, 19, 100, 0.897);
+}
+
+#numeroCarrito {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.botonCarrito {
+    font-size: 35px;
 }
 
 .precioTotal {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
+}
+
+footer {
+    width: 100vw;
+    background-color: rgba(207, 137, 221, 0.993);
+    height: 100px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.textoFooter {
+    font-size: 15px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.mediosPago {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-items: end;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
 }

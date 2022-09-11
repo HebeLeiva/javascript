@@ -88,15 +88,11 @@ function vaciarCarrito() {
     const vaciarCarrito = document.querySelector("#vaciarCarrito")
     const carritoDiv = document.querySelector("#carritoDiv")
     vaciarCarrito.addEventListener("click", () => {
-    carrito.length = 0
-    totalCarrito.innerText = 0
-    localStorage.clear()
-    carritoDiv.innerHTML = ""
-    numeroCarrito.innerText = 0
-})
-        
-
-
+        totalCarrito.innerText = 0
+        localStorage.clear()
+        carritoDiv.innerHTML = ""
+        numeroCarrito.innerText = 0
+    })
 }
 
 
@@ -115,16 +111,16 @@ function renderizarCarrito() {
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
     borrarLibro()
-    //const precioTotal = document.querySelector(".precioTotal")
+   
     totalCarrito.innerText = carrito.reduce((acc, libro) => acc + libro.cantidad * libro.precio, 0)
-    //const numeroCarrito = document.querySelector("#numeroCarrito")
+    
     numeroCarrito.innerText = carrito.length
 
 }
 
 function comprar() {
     const comprar = document.querySelector("#comprar")
-    //const carritoDiv = document.querySelector("#carritoDiv")
+    
     comprar.addEventListener("click", () => {
         carrito.length = 0
         totalCarrito.innerText = 0
